@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Leitor de Código de Barras</title>
+</head>
+<body>
+<h1>Upload de Imagem com Código de Barras</h1>
+<form method="post" enctype="multipart/form-data" th:action="@{/upload}">
+    <input type="file" name="file"  />
+    <button type="submit">Upload</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
